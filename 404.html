@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  html {
+    background-color: rgb(251, 239, 221);
+    color: rgb(87, 87, 87);
+    display: table;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box_404 {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .button-return {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .return_404 {
+    text-decoration: none;
+    padding: 15px 70px;
+    border: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(10,44, 64);
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .2em .2em rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .return_404:hover {
+    box-shadow: 0 0 0 60px rgba(14, 13, 13, 0) inset, .1em .2em .2em rgb(18, 79, 114);
+    background-color: rgb(18, 79, 114)
+  }
+
+  .page-not-found {
+      width: 900px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .page-not-found {
+        width: 800px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .page-not-found {
+        max-width: 700px;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    
+    .box_404 {
+        width: 100%;
+        margin-top: 150px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+      .return_404 {
+      text-decoration: none;
+      padding: 10px 50px;
+      border: 1px solid black;
+      text-align: center;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      border-radius: 50px;
+      background-color: rgb(10,44, 64);
+      box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .2em .2em rgb(0, 0, 0);
+      cursor: pointer;
+    }
+  }
+</style>
+</head>
+
+<body>
+ <div class="box_404">
+    <img class="page-not-found" src="/img/404.gif" alt="">
+    <div class="button-return"><a class="return_404" href="/index.html">go back</a></div>
+ </div>
+</body>
+
+</html>
+<!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
