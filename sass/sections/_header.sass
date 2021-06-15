@@ -1,15 +1,18 @@
-.first_section
-  background: #000032 url("/img/sections-bg.png")
-  background-position: center
-  background-size: cover
-  min-height: 100vh
-  position: relative
-  background-blend-mode: lighten
+body
+  margin: 0
+  padding: 0
 
-.navbar
-  width: 95%
-  margin: 0 auto
-  display: flex
+header
+  background: url("/img/header_bg.png")
+  background-color: #000032
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+  nav
+    width: 95%
+    margin: 0 auto
+    display: flex
 
 .logo
   padding-top: 36px
@@ -27,26 +30,26 @@
   &__choose
     padding-right: 20px
 
-.nav-info-box
-  width: 70%
+.nav-info
+  width: 85%
   display: flex
   justify-content: flex-end
 
 .phone-box
   margin: 55px 50px 0 0
 
-.phone-number
-  color: white
-  font-size: 22px
-  line-height: 21px
-  letter-spacing: 0.06em
-  text-transform: uppercase
-  text-decoration: none
-  transition: 0.3s
-  letter-spacing: 0.06em
+  a
+    color: white
+    font-size: 22px
+    line-height: 21px
+    letter-spacing: 0.06em
+    text-transform: uppercase
+    text-decoration: none
+    transition: 0.3s
+    letter-spacing: 0.06em
 
-  &:hover
-    font-size: 23px
+    &:hover
+      font-size: 23px
 
 .btn-consultation
   display: flex
@@ -69,9 +72,9 @@
   box-shadow: 1px 0 0 0 rgb(255, 255, 255)
   transition: 0.5s
 
-.aaa
-  text-decoration: none
-  color: white
+  a
+    text-decoration: none
+    color: white
 
 .btn-consultation:hover
   background-color: rgba(255, 255, 255, 0.479)
@@ -82,8 +85,8 @@
     box-shadow: 0 0 0 15px rgba(255, 255, 255, 0)
 
 .burger-container
-  width: 73px
-  height: 74px
+  width: 65px
+  height: 65px
   margin-top: 25px
   position: relative
   cursor: pointer
@@ -96,20 +99,20 @@
     left: 0
     top: 0
     &:nth-child(1)
-      border-color: blue
+      border-color: #1a4be0
     &:nth-child(2)
-      border-color: darken(blue, 5)
+      border-color: #1a40af
     &:nth-child(3)
-      border-color: lighten(blue, 5)
+      border-color: #1a48cf
   &:hover
     .bg-circle
-      animation: 2s linear 0s infinite moveBurgerBg
+      animation: 3s linear 0s infinite moveBurgerBg
       &:nth-child(1)
-        transform-origin: 51% 52%
+        transform-origin: 53% 54%
       &:nth-child(2)
-        transform-origin: 50% 48%
-      &:nth-child(3)
         transform-origin: 52% 48%
+      &:nth-child(3)
+        transform-origin: 55% 45%
 
 @keyframes moveBurgerBg
   0%
@@ -123,7 +126,7 @@
   background: white
   position: absolute
   top: 30px
-  left: 18px
+  left: 16px
 
 .burger__second-line
   width: 23px
@@ -131,7 +134,231 @@
   background: white
   position: absolute
   top: 40px
-  left: 30px
+  left: 29px
+
+.header-information-container
+  display: flex
+  width: 80%
+  margin: 0 auto
+  margin-top: 150px
+
+.header-info-box
+  max-width: 700px
+  h1
+    text-transform: uppercase
+    color: #FFFFFF
+    font-size: 55px
+    margin: 0
+
+.header-VR-graph
+  margin-left: 40px
+
+  &__shine-first
+    position: absolute
+    color: rgba(2, 203, 203, 0.4)
+    margin-left: 2px
+    margin-top: 4px
+
+  &__shine-second
+    position: absolute
+    color: rgba(250, 51, 46, 0.4)
+    margin-left: 8px
+
+  &__shine-third
+    position: relative
+    color: #FFFFFF
+    margin-left: 5px
+    top: 2px
+
+.header-VR-img
+  width: 500px
+  position: absolute
+  left: 55%
+
+.header-txt-box__subtitle
+  max-width: 455px
+  font-size: 17px
+  line-height: 24px
+  letter-spacing: 0.04em
+  text-transform: uppercase
+  color: rgba(255, 255, 255, 0.8)
+  margin-left: 48px
+
+.header-bottom-box
+  display: flex
+  width: 80%
+  margin: 0 auto
+  margin-top: 250px
+  text-align: center
+  letter-spacing: 0.08em
+  text-transform: uppercase
+  padding-bottom: 40px
+
+  &__txt
+    color: white
+    padding-right: 50px
+    font-size: 14px
+    line-height: 14px
+
+  &__slash
+    color: #1E4FC6
+    font-size: 22px
+    line-height: 22px
+
+@media screen and (max-width: 1200px)
+  .header-information-container
+    width: 100%
+    justify-content: space-between
+  .header-info-box
+    margin-left: 100px
+  .header-VR-img
+    width: 480px
+    left: 58%
+
+  .phone-box
+    a
+      font-size: 18px
+      &:hover
+        font-size: 19px
+@media screen and (max-width: 1150px)
+  .header-info-box
+    margin-left: 50px
+
+  .phone-box
+    margin-right: 45px
+  .btn-consultation
+    margin-right: 30px
+    width: 274px
+
+  .header-VR-img
+    width: 430px
+
+@media screen and (max-width: 1025px)
+  .header-info-box
+    h1
+      font-size: 45px
+  .header-txt-box__subtitle
+    margin-left: 20px
+  .header-VR-img
+    position: inherit
+  .header-bottom-box
+    margin-top: 140px
+
+@media screen and (max-width: 980px)
+  header
+    background: url("/img/bg-header(tablet).png")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+  .header-bottom-box
+    margin-top: 140px
+    padding-bottom: 56px
+  .header-information-container
+    flex-direction: column-reverse
+    margin: 100px auto
+    align-items: center
+
+  .phone-box
+    margin: 25px 25px 0 0
+    a
+      font-size: 16px
+      &:hover
+        font-size: 16px
+        color: #d6d4d4
+  .header-info-box
+    h1
+      font-size: 55px
+  .header-VR-img
+    width: 520px
+
+  .logo
+    width: 140px
+    height: 37px
+    padding-top: 16px
+
+  .language-box
+    display: none
+
+  .bg-circle
+    display: none
+
+  .btn-consultation
+    width: 229px
+    height: 38px
+    margin-top: 15px
+    font-size: 12px
+    margin-right: 5px
+    @keyframes pulse
+      to
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0)
+  .burger-container
+    margin-top: 0
+
+@media screen and (max-width: 710px)
+  .phone-box
+    display: none
+  .btn-consultation
+    display: none
+  .logo
+    margin: 16px 24px
+  .burger-container
+    margin: 15px 0
+
+  .header-VR-img
+    width: 70%
+
+  .header-information-container
+    margin-top: 25px
+  .header-bottom-box
+    margin-top: 30px
+    flex-direction: column
+    text-align: start
+    width: 60%
+
+  .header-VR-graph
+    margin: 0
+
+@media screen and (max-width: 630px)
+  .header-VR-img
+    width: 90%
+  .header-info-box
+    margin: 0 auto
+    max-width: 450px
+    width: 90%
+    h1
+      font-size: 40px
+      margin: 0 auto
+  .header-txt-box__subtitle
+    margin: 10px 0
+
+  .header-bottom-box
+    width: 90%
+    margin: 0 auto
+    font-size: 12px
+  .header-bottom-box__txt
+    font-size: 12px
+
+@media screen and (max-width: 500px)
+  .header-VR-img
+    width: 85%
+    margin-left: 10px
+  .header-info-box
+
+    width: 90%
+    h1
+      font-size: 35px
+  .header-txt-box__subtitle
+    font-size: 13px
+
+  .header-bottom-box__txt
+    padding: 0
+.first_section
+  background: #000032 url("/img/sections-bg.png")
+  background-position: center
+  background-size: cover
+  min-height: 100vh
+  position: relative
+  background-blend-mode: lighten
 
 .second-section-main-container
   width: 80%
