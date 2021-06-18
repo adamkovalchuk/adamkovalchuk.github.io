@@ -1,0 +1,109 @@
+.difference-sect
+    background: url("/img/main-bgg.png")
+    background-color: #000032
+    background-position: center
+    background-size: cover
+    position: relative
+    background-blend-mode: lighten
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+.difference-container
+    width: 80%
+    margin: 0 auto
+    padding-top: 150px
+
+    h2
+        margin: 0
+        font-size: 55px
+        max-width: 900px
+        text-transform: uppercase
+        color: white
+        line-height: 57px
+
+.difference-images-blocks
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+    padding: 25px
+    width: 100%
+
+.difference-box
+    max-width: 540px
+    padding-bottom: 50px
+
+    img
+        mix-blend-mode: lighten
+
+.difference-box__article
+    font-size: 28px
+    color: white
+
+.difference-box__main-txt
+    font-size: 17px
+    line-height: 24px
+    color: rgba(255, 255, 255, 0.8)
+
+@media screen and (max-width: 1250px)
+    .difference-container
+        width: 90%
+        h2
+            margin-left: 50px
+    .difference-images-blocks
+        padding: 0
+        margin-top: 20px
+        justify-content: space-around
+    .difference-box__main-txt
+        max-width: 500px
+
+    .difference-box
+        max-width: 380px
+@media screen and (max-width: 1150px)
+
+    .difference-container
+        h2
+            font-size: 45px
+            max-width: 800px
+@media screen and (max-width: 1000px)
+    .difference-container
+        width: 95%
+
+    .difference-box__article
+        font-size: 24px
+        max-width: 280px
+
+    .difference-box__main-txt
+        font-size: 14px
+    .difference-box
+        padding-bottom: 80px
+
+@media screen and (max-width: 860px)
+    .difference-images-blocks
+        flex-direction: column
+        width: 100%
+    .difference-box
+        margin: 0 auto
+    .difference-container
+        h2
+            font-size: 40px
+@media screen and (max-width: 680px)
+    .difference-container
+        h2
+            font-size: 30px
+            max-width: 500px
+            margin-left: 30px
+@media screen and (max-width: 420px)
+    .difference-container
+        h2
+            font-size: 20px
+            width: 100%
+            margin: 0
+    .difference-box
+        img
+            width: 100%
+            margin: 0 auto
+    .difference-container
+        width: 90%
+        margin: 0 auto
+
+    .difference-box__article
+        font-size: 20px
