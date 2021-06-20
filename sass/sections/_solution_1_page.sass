@@ -1,0 +1,148 @@
+
+.solution_1_sect
+    min-height: 100vh
+
+.image-man-vr
+    position: absolute
+    background: url("/img/solution1.png")
+    background-position: right
+    background-size: cover
+    width: 1000px
+    height: 800px
+    mix-blend-mode: lighten
+    right: 0
+    top: 20px
+
+.solution_1_container
+    display: flex
+    flex-direction: column
+    padding-bottom: 15px
+
+.solution-text-box
+    margin: 80px 110px 0 110px
+    max-width: 470px
+    h1
+        font-size: 71px
+        line-height: 71px
+        text-transform: uppercase
+        color: #FFFFFF
+        margin: 15px 0
+    p
+        font-size: 17px
+        line-height: 24px
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: rgba(255, 255, 255, 0.8)
+.portfolio-arrow
+    position: relative
+    font-size: 14px
+    line-height: 97%
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    margin: 80px 85px 65px 85px
+    border-radius: 67px
+    padding: 20px 25px
+    border: 1px solid transparent
+    width: 170px
+
+    &:hover
+        border: 1px solid rgba(255, 255, 255, 0.1)
+
+    svg
+        fill: white
+@media screen and ( max-width: 1200px  )
+    .solution_1_sect
+        min-height: 100vh
+    .image-man-vr
+        width: 750px
+        height: 550px
+        bottom: 0
+        top: 32%
+    .solution-text-box
+        margin: 10px 110px 0 110px
+@media screen and ( max-width: 1150px  )
+    .image-man-vr
+        mix-blend-mode: lighten
+        width: 650px
+        height: 450px
+        top: 45%
+
+    .solution_1_container
+        padding-bottom: 75px
+    .solution-text-box
+        max-width: 420px
+        h1
+            font-size: 58px
+        p
+            font-size: 16px
+@media screen and ( max-width: 980px  )
+    .solution_1_sect
+        overflow-x: hidden
+
+    .solution-text-box
+        max-width: 380px
+        h1
+            font-size: 50px
+        p
+            font-size: 15px
+    .portfolio-arrow
+        margin: 20px 0 0 85px
+    .image-man-vr
+        right: -15%
+        top: 41%
+
+@media screen and ( max-width: 900px  )
+    .image-man-vr
+        right: -15%
+        top: 44%
+        opacity: .3
+@media screen and ( max-width: 800px  )
+    .image-man-vr
+        width: 853px
+        height: 568px
+        top: 30%
+
+@media screen and ( max-width: 600px  )
+    .solution-text-box
+        max-width: 380px
+    h1
+        font-size: 40px
+    p
+        font-size: 13px
+    .image-man-vr
+        width: 653px
+        height: 468px
+        top: 42%
+    .solution-text-box
+        max-width: 80%
+        width: 80%
+        margin: 0 auto
+    .portfolio-arrow
+        text-align: center
+        margin: 50px auto
+        position: relative
+        padding: 20px 25px
+        border: 1px solid rgb(255, 255, 255)
+
+        &:hover
+            border: 1px solid rgb(192, 192, 192)
+
+        svg
+            display: none
+
+@media screen and ( max-width: 440px  )
+    .image-man-vr
+        width: 553px
+        height: 368px
+        top: 55%
+    .solution-text-box
+        max-width: 380px
+        h1
+            font-size: 30px
+        p
+            font-size: 12px
+    .portfolio-arrow
+        width: 80%
+        padding: 0
+        padding: 20px 0

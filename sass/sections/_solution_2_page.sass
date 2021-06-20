@@ -1,0 +1,97 @@
+.all-icon-container
+    display: flex
+    flex-direction: column
+
+.title-icon-container
+    display: flex
+    h1
+        font-size: 50px
+        line-height: 57px
+        text-transform: uppercase
+        color: #FFFFFF
+        max-width: 750px
+        margin-left: 100px
+
+.icon-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    width: 90%
+    max-width: 1250px
+    margin: 30px auto
+.icon-box::before
+    content: ""
+    opacity: 0.06
+    position: absolute
+    z-index: -1
+    top: 35%
+    left: 0
+    bottom: 0
+    right: 0
+    background: url(/img/wave.png)
+    background-size: cover
+
+.icon-block
+    max-width: 330px
+    margin-top: 40px
+
+.icon-block__title
+    font-weight: bold
+    font-size: 19px
+    line-height: 25px
+    margin: 14px 0 0 0
+    color: #FFFFFF
+.icon-block__subtitle
+    font-size: 14px
+    line-height: 18px
+    margin-top: 10px
+    color: rgba(255, 255, 255, 0.651)
+
+@media screen and ( max-width: 1200px  )
+    .icon-box
+        max-width: 900px
+        width: 100%
+    .title-icon-container
+        h1
+            font-size: 40px
+            max-width: 540px
+
+@media screen and ( max-width: 1050px  )
+    .icon-box
+        max-width: 900px
+        width: 80%
+@media screen and ( max-width: 880px  )
+    .icon-block
+        max-width: 290px
+        margin-top: 40px
+@media screen and ( max-width: 780px  )
+    .icon-box
+        max-width: 700px
+        width: 90%
+    .title-icon-container
+        h1
+            font-size: 35px
+            margin-left: 25px
+            max-width: 440px
+@media screen and ( max-width: 690px  )
+    .icon-block
+        max-width: 250px
+        margin-top: 40px
+
+@media screen and ( max-width: 600px  )
+    .icon-box
+        max-width: 450px
+    .icon-block
+        max-width: 290px
+        margin: 10px auto
+    .title-icon-container
+        flex-direction: column
+        h1
+            margin: 20px auto
+            font-size: 30px
+            max-width: 320px
+            width: 90%
+@media screen and ( max-width: 370px  )
+    .title-icon-container
+        h1
+            font-size: 25px
