@@ -3,6 +3,7 @@ body
   padding: 0
 
 header
+  // min-height: 100vh
   background: url("/img/header_bg.png")
   background-color: #000032
   background-size: cover
@@ -10,247 +11,6 @@ header
   background-position: center
   background-blend-mode: lighten
 
-.nav
-  width: 95%
-  margin: 0 auto
-  display: flex
-  &--consultation
-    .btn-consultation
-      &, & a
-        color: grey
-        border-color: grey
-        cursor: not-allowed
-      a
-        pointer-events: none
-    .phone-box a
-      color: grey
-
-.language-box
-  display: flex
-  color: wheat
-  padding-right: 20px
-  padding-top: 35px
-  font-size: 22px
-
-  &__choose
-    padding-right: 15px
-    margin-top: 15px
-    margin-bottom: 0
-
-.nav-info
-  width: 85%
-  display: flex
-  justify-content: flex-end
-
-.phone-box
-  margin: 55px 50px 0 0
-
-  a
-    color: white
-    font-size: 22px
-    line-height: 21px
-    letter-spacing: 0.06em
-    text-transform: uppercase
-    text-decoration: none
-    transition: 0.3s
-    letter-spacing: 0.06em
-
-    &:hover
-      font-size: 23px
-
-.btn-consultation
-  display: flex
-  align-items: center
-  justify-content: center
-  margin-right: 40px
-  width: 324px
-  height: 58px
-  margin-top: 35px
-  border: 1px solid #FFFFFF
-  box-sizing: border-box
-  border-radius: 67px
-  background-color: transparent
-  font-size: 14px
-  text-transform: uppercase
-  letter-spacing: 0.1em
-  cursor: pointer
-  transition: 0.5s
-
-  a
-    text-decoration: none
-    color: white
-
-.btn-consultation:hover
-  background-color: rgba(255, 255, 255, 0.479)
-  color: black
-
-@keyframes moveBurgerBg
-  0%
-    transform: rotate(0deg)
-  100%
-    transform: rotate(360deg)
-
-@keyframes moveBurgerBgActive
-  0%
-    transform: rotate(0deg)
-  100%
-    transform: rotate(0deg)
-
-.burger-container
-  width: 65px
-  height: 65px
-  margin-top: 25px
-  position: relative
-  cursor: pointer
-  .bg-circle
-    width: 100%
-    height: 100%
-    border: 2px solid
-    border-radius: 50%
-    position: absolute
-    left: 0
-    top: 0
-    animation: 5s linear 0s infinite moveBurgerBg
-    div
-      transition: .3s
-    &:nth-child(1)
-      border-color: #1d56ff
-      transform-origin: 53% 54%
-    &:nth-child(2)
-      border-color: #1c4bd8
-      transform-origin: 52% 48%
-    &:nth-child(3)
-      border-color: #1d44b8
-      transform-origin: 55% 45%
-  .bg-circle-active
-    transform: rotate(0deg)
-    animation: 5s linear 0s 0 moveBurgerBg
-    animation-direction: reverse
-    animation-fill-mode: forwards
-
-.burger__first-line
-  width: 36px
-  height: 2px
-  background: white
-  position: absolute
-  top: 30px
-  left: 16px
-  transition: .3s
-  transform: rotate(0deg)
-
-.burger__second-line
-  width: 23px
-  height: 2px
-  background: white
-  position: absolute
-  transition: .3s
-  top: 40px
-  left: 29px
-
-.nav-burger-container
-  overflow: hidden
-  position: fixed
-  z-index: 3
-  top: 0
-  left: 0
-  height: 0
-  min-height: 0
-  width: 100%
-  transition: 1s
-  &-active
-    display: flex
-    min-height: 100vh
-    height: 100vh
-
-.box-solution-info
-  display: block
-
-.burger-active-box
-  width: 100%
-  margin: 0 auto
-  background-image: url("/img/bg-burger-desktop.png")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center
-  mix-blend-mode: hard-light
-  nav
-    width: 95%
-    margin: 0 auto
-    display: flex
-    justify-content: space-between
-    img
-      padding-top: 36px
-      padding-right: 40px
-      width: 212px
-      height: 56px
-
-.burger__first-line-active
-  transform: rotate(45deg)
-  width: 30px
-  height: 3px
-  top: 32px
-  left: 20px
-.burger__second-line-active
-  transform: rotate(-45deg)
-  width: 30px
-  height: 3px
-  top: 32px
-  left: 20px
-
-.burger-active-menu-list
-  width: 100%
-  ul
-    width: 70%
-    max-width: 800px
-    margin: 100px auto
-    display: flex
-    justify-content: space-between
-    list-style: none
-    padding: 0
-    li
-      font-size: 20px
-      line-height: 130%
-      letter-spacing: 0.03em
-      color: rgba(255, 255, 255, 0.4)
-      text-align: start
-      margin: 25px
-      display: flex
-      p
-        margin: 0
-      a
-        padding-left: 15px
-        font-size: 38px
-        line-height: 55px
-        letter-spacing: 0.03em
-        color: rgba(255, 255, 255, 0.4)
-        margin-top: 10px
-        transition: .4s
-        &:hover
-          color: #FFFFFF
-.burger-bottom-design
-  text-align: start
-  font-size: 17px
-  line-height: 24px
-  color: #FFFFFF
-  padding: 10px 50px
-
-.burger-active-close-txt
-  position: absolute
-  left: -6%
-  top: 150%
-  color: white
-  transform: rotate(90deg)
-  letter-spacing: 0.1em
-  text-transform: uppercase
-  &:hover
-    color: #4e7aff
-
-.language-box-active
-  display: none
-.burger-active-link
-  display: none
-.burger-active-phone
-  display: none
 .header-information-container
   display: flex
   width: 80%
@@ -330,20 +90,9 @@ header
     width: 480px
     left: 58%
 
-  .phone-box
-    a
-      font-size: 18px
-      &:hover
-        font-size: 19px
 @media screen and (max-width: 1150px)
   .header-info-box
     margin-left: 50px
-
-  .phone-box
-    margin-right: 45px
-  .btn-consultation
-    margin-right: 30px
-    width: 274px
 
   .header-VR-img
     width: 430px
@@ -358,9 +107,6 @@ header
     position: inherit
   .header-bottom-box
     margin-top: 140px
-  .phone-box
-    a
-      font-size: 16px
 
 @media screen and (max-width: 980px)
   header
@@ -376,73 +122,13 @@ header
     margin: 100px auto
     align-items: center
 
-  .phone-box
-    margin: 25px 25px 0 0
-    a
-      font-size: 16px
-      &:hover
-        color: #d6d4d4
   .header-info-box
     h1
       font-size: 55px
   .header-VR-img
     width: 520px
 
-  .language-box
-    display: none
-
-  .bg-circle
-    display: none
-
-  .btn-consultation
-    width: 229px
-    height: 38px
-    margin-top: 15px
-    font-size: 12px
-    margin-right: 5px
-  .burger-container
-    margin-top: 0
-  .burger-active-menu-list
-    ul
-      width: 75%
-      li
-        a
-          font-size: 30px
-  .burger-active-box
-    nav
-      img
-        width: 140px
-        height: 37px
-        padding-top: 16px
-  .language-box-active
-    display: block
-    display: flex
-    margin: 0 auto
-    width: 100px
-    justify-content: space-around
-    p
-      font-size: 18px
-      line-height: 19px
-      padding-top: 5px
-      letter-spacing: 0.04em
-      text-transform: uppercase
-      color: #FFFFFF
-
 @media screen and (max-width: 710px)
-  .burger-active-menu-list
-    ul
-      flex-direction: column
-      align-items: center
-      margin-top: 30px
-      margin-bottom: 0
-      li
-        margin: 0
-  .burger-active-close-txt
-    display: none
-  .burger-bottom-design
-    display: none
-  .phone-box
-    display: none
 
   .header-VR-img
     width: 70%
@@ -490,48 +176,3 @@ header
 
   .header-bottom-box__txt
     padding: 0
-  .btn-consultation
-    display: none
-
-  .burger-active-box
-    nav
-      img
-        display: none
-  .language-box-active
-    margin: 0
-    width: 80px
-  .burger-active-menu-list
-    ul
-      width: 75%
-      li
-        font-size: 12px
-        color: #ffffffde
-        margin: 5px
-        a
-          font-size: 20px
-          margin: 0
-          padding-left: 5px
-          color: #ffffffde
-          &:active
-            color: #00e1ff
-  .burger-active-link
-    display: block
-    text-align: center
-    margin-top: 20px
-    color: white
-    text-decoration-line: underline
-    text-transform: uppercase
-    &:active
-      color: #00e1ff
-  .burger-active-phone
-    display: block
-    text-align: center
-    margin-top: 15px
-    font-size: 14px
-    line-height: 14px
-    letter-spacing: 0.03em
-    text-transform: uppercase
-    color: #FFFFFF
-    &:active
-      color: #00e1ff
-      font-size: 15px
