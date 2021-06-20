@@ -1,4 +1,146 @@
 .friends-section
-    background: url("/img/friends-bg.png")
-    height: 100vh
+    min-height: 100vh
+
+.friends-image
+    width: 794px
+    height: 580px
+    background: url("/img/friends_image.png")
+    position: absolute
+    mix-blend-mode: lighten
+    right: 0
+    bottom: 0
+
+.friend-text-box
+    padding-top: 150px
+    width: 85%
+    margin: 0 auto
+    h2
+        font-size: 52px
+        text-transform: uppercase
+        color: #FFFFFF
+        line-height: 57px
+    p
+        max-width: 490px
+        font-size: 17px
+        line-height: 140%
+        color: rgba(255, 255, 255, 0.8)
+.friends-info-box
+    max-width: 880px
     width: 100%
+    margin: 80px 0
+    margin-left: 7%
+    display: flex
+    justify-content: space-between
+.friends-info-block
+    color: white
+
+.friends-info-block__numbers
+    font-size: 48px
+    line-height: 35px
+    margin: 0
+.friends-info-block__text
+    margin: 12px 3px
+
+.friend-partners
+    display: flex
+    margin: 110px 0
+    margin-left: 7%
+    margin-bottom: 0
+    padding-bottom: 20px
+    p
+        margin: 0
+        padding-top: 25px
+        color: white
+        text-transform: uppercase
+.megaphone-icon
+    padding-top: 5px
+    padding-left: 50px
+.gazprom-icon
+    width: 111px
+    height: 53px
+    padding-left: 50px
+
+@media screen and (max-width: 1200px)
+    .friend-text-box
+        h2
+            font-size: 48px
+
+@media screen and (max-width: 1100px)
+    .friends-image
+        width: 694px
+        height: 580px
+    .friend-text-box
+        padding-top: 50px
+    .friends-info-box
+        max-width: 500px
+        width: 70%
+
+        flex-wrap: wrap
+    .friends-info-block
+        width: 200px
+        padding-top: 10px
+
+@media screen and (max-width: 880px)
+    .friend-text-box
+        h2
+            font-size: 32px
+            margin: 0
+
+@media screen and (max-width: 720px)
+    .friends-image
+        width: 694px
+        height: 480px
+
+    .friend-text-box
+        h2
+            font-size: 25px
+        p
+            font-size: 14px
+            margin: 0 auto
+    .friend-partners
+        padding-top: 50px
+        p
+            display: none
+    .friends-info-box
+        width: 90%
+        margin: 0 auto
+        padding-top: 50px
+    .friends-info-block__numbers
+        font-size: 30px
+    .friends-info-block__text
+        font-size: 14px
+    .friend-partners
+        width: 80%
+        display: flex
+        justify-content: space-between
+        padding-top: 150px
+        margin: 0 auto
+    .megaphone-icon
+        padding: 0
+        padding-top: 10px
+    .gazprom-icon
+        padding: 0
+@media screen and (max-width: 555px)
+    .friends-info-box
+        width: 85%
+@media screen and (max-width: 480px)
+    .friends-info-block
+        width: 120px
+        max-width: 140px
+    .friends-info-box
+        width: 75%
+@media screen and (max-width: 380px)
+    .friends-info-box
+        width: 85%
+
+    .friend-partners
+        width: 100%
+        justify-content: space-around
+    .gazprom-icon
+        width: 100px
+        height: 42px
+        padding-top: 5px
+    .megaphone-icon
+        width: 160px
+        height: 70px
+        padding: 0

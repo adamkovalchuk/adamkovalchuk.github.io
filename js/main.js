@@ -12,6 +12,7 @@ const openBurger = () => {
     for (let circle of circles) {
         circle.classList.toggle('bg-circle-active')
     }
+    
     if (burgerContainer[0].classList.length === 1) {
         burgerContainer[0].classList.toggle('nav-burger-container-active')
         line1.classList.toggle('burger__first-line-active')
