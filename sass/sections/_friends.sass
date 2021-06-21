@@ -24,6 +24,7 @@
         font-size: 17px
         line-height: 140%
         color: rgba(255, 255, 255, 0.8)
+        font-family: 'Helvetica Neue Cyr'
 .friends-info-box
     max-width: 880px
     width: 100%
@@ -33,13 +34,14 @@
     justify-content: space-between
 .friends-info-block
     color: white
-
-.friends-info-block__numbers
-    font-size: 48px
-    line-height: 35px
-    margin: 0
-.friends-info-block__text
-    margin: 12px 3px
+    &__numbers
+        font-size: 48px
+        line-height: 35px
+        margin: 0
+        font-family: 'Neue Machina'
+    &__text
+        margin: 12px 3px
+        font-family: 'Helvetica Neue Cyr'
 
 .friend-partners
     display: flex
@@ -49,6 +51,7 @@
     padding-bottom: 20px
     p
         margin: 0
+        font-family: 'Neue Machina'
         padding-top: 25px
         color: white
         text-transform: uppercase
@@ -105,10 +108,11 @@
         width: 90%
         margin: 0 auto
         padding-top: 50px
-    .friends-info-block__numbers
-        font-size: 30px
-    .friends-info-block__text
-        font-size: 14px
+    .friends-info-block
+        &__numbers
+            font-size: 30px
+        &__text
+            font-size: 14px
     .friend-partners
         width: 80%
         display: flex

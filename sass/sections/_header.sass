@@ -10,54 +10,54 @@ header
   background-repeat: no-repeat
   background-position: center
   background-blend-mode: lighten
+  min-height: 100vh
 
-.header-information-container
+.header-title-container
   display: flex
   width: 80%
   margin: 0 auto
   margin-top: 150px
 
-.header-info-box
+.header-title-box
   max-width: 700px
   h1
     text-transform: uppercase
     color: #FFFFFF
     font-size: 55px
     margin: 0
+  &__VR-graph
+    margin-left: 40px
 
-.header-VR-graph
-  margin-left: 40px
+    &__shine-first
+      position: absolute
+      color: rgba(2, 203, 203, 0.4)
+      margin-left: 2px
+      margin-top: 4px
 
-  &__shine-first
-    position: absolute
-    color: rgba(2, 203, 203, 0.4)
-    margin-left: 2px
-    margin-top: 4px
+    &__shine-second
+      position: absolute
+      color: rgba(250, 51, 46, 0.4)
+      margin-left: 8px
 
-  &__shine-second
-    position: absolute
-    color: rgba(250, 51, 46, 0.4)
-    margin-left: 8px
+    &__shine-third
+      position: relative
+      color: #FFFFFF
+      margin-left: 5px
+      top: 2px
 
-  &__shine-third
-    position: relative
-    color: #FFFFFF
-    margin-left: 5px
-    top: 2px
-
+  &__subtitle
+    max-width: 480px
+    font-size: 17px
+    line-height: 24px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: rgba(255, 255, 255, 0.8)
+    margin-left: 48px
+    font-family: 'Helvetica Neue Cyr'
 .header-VR-img
   width: 500px
   position: absolute
   left: 55%
-
-.header-txt-box__subtitle
-  max-width: 455px
-  font-size: 17px
-  line-height: 24px
-  letter-spacing: 0.04em
-  text-transform: uppercase
-  color: rgba(255, 255, 255, 0.8)
-  margin-left: 48px
 
 .header-bottom-box
   display: flex
@@ -74,6 +74,8 @@ header
     padding-right: 50px
     font-size: 14px
     line-height: 14px
+    font-family: 'Helvetica Neue Cyr'
+    font-weight: bold
 
   &__slash
     color: #1E4FC6
@@ -81,28 +83,27 @@ header
     line-height: 22px
 
 @media screen and (max-width: 1200px)
-  .header-information-container
+  .header-title-container
     width: 100%
     justify-content: space-between
-  .header-info-box
+  .header-title-box
     margin-left: 100px
   .header-VR-img
     width: 480px
     left: 58%
 
 @media screen and (max-width: 1150px)
-  .header-info-box
+  .header-title-box
     margin-left: 50px
 
   .header-VR-img
     width: 430px
-
 @media screen and (max-width: 1025px)
-  .header-info-box
+  .header-title-box
     h1
       font-size: 45px
-  .header-txt-box__subtitle
-    margin-left: 20px
+    &__subtitle
+      margin-left: 20px
   .header-VR-img
     position: inherit
   .header-bottom-box
@@ -117,12 +118,12 @@ header
   .header-bottom-box
     margin-top: 140px
     padding-bottom: 56px
-  .header-information-container
+  .header-title-container
     flex-direction: column-reverse
     margin: 100px auto
     align-items: center
 
-  .header-info-box
+  .header-title-box
     h1
       font-size: 55px
   .header-VR-img
@@ -138,41 +139,40 @@ header
     flex-direction: column
     text-align: start
     width: 60%
-
-  .header-VR-graph
-    margin: 0
+  .header-title-box
+    &__VR-graph
+      margin: 0
 
 @media screen and (max-width: 630px)
   .header-VR-img
     width: 90%
-  .header-info-box
+  .header-title-box
     margin: 0 auto
     max-width: 450px
     width: 90%
     h1
       font-size: 40px
       margin: 0 auto
-  .header-txt-box__subtitle
-    margin: 10px 0
+    &__subtitle
+      margin: 10px 0
 
   .header-bottom-box
     width: 90%
     margin: 0 auto
     font-size: 12px
-  .header-bottom-box__txt
-    font-size: 12px
+    &__txt
+      font-size: 12px
 
 @media screen and (max-width: 500px)
   .header-VR-img
     width: 85%
     margin-left: 10px
-  .header-info-box
-
+  .header-title-box
     width: 90%
     h1
       font-size: 35px
-  .header-txt-box__subtitle
-    font-size: 13px
+    &__subtitle
+      font-size: 13px
 
   .header-bottom-box__txt
     padding: 0

@@ -4,128 +4,27 @@ body
 
 .consultation-container
     background-color: #E4E7E9
-    background: url("/consultation-bg.jpeg")
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    border: 0
-    mix-blend-mode: difference
-
-.consultation-navbar
-    width: 95%
-    margin: 0 auto
-    display: flex
-
-.logo-black
-    padding-top: 36px
-    padding-right: 40px
-    width: 212px
-    height: 56px
-
-.language-box-consultation
-    display: flex
-    color: rgb(0, 0, 0)
-    padding-right: 20px
-    padding-top: 35px
-    font-size: 22px
-    p
-        padding-right: 20px
-
-.nav-info-consultation
-    width: 70%
-    display: flex
-    justify-content: flex-end
-
-.phone-box-consultation
-    margin: 55px 50px 0 0
+    background: url("/img/consultation-bg.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-blend-mode: difference
+    min-height: 100vh
+.choose__consultation
+    color: black
+.consultation-phone-box
     a
         color: black
-        font-size: 22px
-        line-height: 21px
-        letter-spacing: 0.06em
-        text-transform: uppercase
-        text-decoration: none
-        transition: 0.3s
-        letter-spacing: 0.06em
-
-        &:hover
-            font-size: 23px
-
-// .btn-consultation-ready
-//     display: flex
-//     align-items: center
-//     justify-content: center
-//     margin-right: 40px
-//     width: 324px
-//     height: 58px
-//     background-color: #636363
-//     margin-top: 35px
-//     opacity: 0.3
-//     box-sizing: border-box
-//     border-radius: 67px
-//     font-size: 14px
-//     text-transform: uppercase
-//     letter-spacing: 0.1em
-//     border: 1px solid black
-//     cursor: not-allowed
-//     width: 324px
-//     height: 58px
-//     a
-//         cursor: not-allowed
-//         text-decoration: none
-//         color: #000000
-
-.burger-container-consultation
-    width: 73px
-    height: 74px
-    margin-top: 25px
-    background-image: url("/images/burger-circle.png")
-    position: relative
-    cursor: pointer
-
-.bg-circle
-    width: 100%
-    height: 100%
-    border: 2px solid
-    border-radius: 50%
-    position: absolute
-    left: 0
-    top: 0
-    animation: 5s linear 0s infinite moveBurgerBg
-    div
-        transition: .3s
-    &:nth-child(1)
-        border-color: #1d56ff
-        transform-origin: 53% 54%
-    &:nth-child(2)
-        border-color: #1c4bd8
-        transform-origin: 52% 48%
-    &:nth-child(3)
-        border-color: #1d44b8
-        transform-origin: 55% 45%
-@keyframes moveBurgerBg
-    0%
-        transform: rotate(0deg)
-    100%
-        transform: rotate(360deg)
-
-.burger__first-line-consultation
-    width: 36px
-    height: 2px
-    background: black
-    position: absolute
-    top: 30px
-    left: 16px
-    transition: .3s
-    transform: rotate(0deg)
-
-.burger__second-line-consultation
-    width: 25px
-    height: 2px
-    background: black
-    position: absolute
-    top: 38px
-    left: 25px
-    transition: .3s
-    transform: rotate(0deg)
+.btn-consultation-block
+    cursor: not-allowed
+    opacity: .3
+    border: 1px solid #000032
+    box-sizing: border-box
+    border-radius: 67px
+    a
+        color: #000032
+        cursor: not-allowed
+.consultation-line
+    background-color: #000000
 
 .consultation-inputs-box
     display: flex
@@ -159,6 +58,7 @@ body
 
 .consultation-subtitle
     font-size: 17px
+    font-family: 'Helvetica Neue Cyr'
     line-height: 140%
     color: #000000
     max-width: 380px
@@ -179,9 +79,8 @@ body
         border: none
         width: 250px
         border-bottom: 2px solid #818499
-
+        font-family: 'Helvetica Neue Cyr'
         outline: none
-        color: black
 
 .input-box-big
     width: 100%
@@ -209,6 +108,7 @@ body
     label
         color: #000032
         font-size: 14px
+        font-family: 'Helvetica Neue Cyr'
 
 .iputs-button
     width: 238px
@@ -224,6 +124,7 @@ body
     cursor: pointer
     border: none
     transition: .2s
+    font-family: 'Helvetica Neue Cyr'
 
     &:hover
         background: linear-gradient(112.73deg, #5E1EC6 1.67%, #1E4FC6 100%)
@@ -345,7 +246,7 @@ body
         width: 90%
         margin: 0 auto
     .consultation-inputs-box
-        margin-top: 0
+        margin-top: 30px
     .input-box
         width: 100%
         input

@@ -17,12 +17,10 @@
     display: flex
     &--consultation
         .btn-consultation
-        &, & a
-            color: grey
-            border-color: grey
-            cursor: not-allowed
-        a
-            pointer-events: none
+            a
+                color: grey
+                border-color: grey
+                cursor: not-allowed
         .phone-box a
             color: grey
 
@@ -42,42 +40,45 @@
     display: flex
     justify-content: flex-end
 
-.phone-box
-    margin: 55px 50px 0 0
-    a
-        color: white
-        font-size: 22px
-        line-height: 21px
-        letter-spacing: 0.06em
+    &__phone-box
+        margin: 55px 50px 0 0
+        a
+            color: white
+            font-size: 22px
+            line-height: 21px
+            letter-spacing: 0.06em
+            text-transform: uppercase
+            text-decoration: none
+            transition: 0.3s
+            letter-spacing: 0.06em
+            font-family: 'Neue Machina'
+
+            &:hover
+                font-size: 23px
+
+    &__btn-consultation
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 40px
+        width: 324px
+        height: 58px
+        margin-top: 35px
+        border: 1px solid #FFFFFF
+        box-sizing: border-box
+        border-radius: 67px
+        background-color: transparent
+        font-size: 14px
         text-transform: uppercase
-        text-decoration: none
-        transition: 0.3s
-        letter-spacing: 0.06em
+        letter-spacing: 0.1em
+        cursor: pointer
+        transition: 0.5s
+        font-family: 'Helvetica Neue Cyr'
 
-        &:hover
-            font-size: 23px
-
-.btn-consultation
-    display: flex
-    align-items: center
-    justify-content: center
-    margin-right: 40px
-    width: 324px
-    height: 58px
-    margin-top: 35px
-    border: 1px solid #FFFFFF
-    box-sizing: border-box
-    border-radius: 67px
-    background-color: transparent
-    font-size: 14px
-    text-transform: uppercase
-    letter-spacing: 0.1em
-    cursor: pointer
-    transition: 0.5s
-
-a
-    text-decoration: none
-    color: white
+        a
+            text-decoration: none
+            color: white
+            font-size: 14px
 
 .btn-consultation:hover
     background-color: rgba(255, 255, 255, 0.479)
@@ -89,7 +90,7 @@ a
     margin-top: 25px
     position: relative
     cursor: pointer
-    .bg-circle
+    &__bg-circle
         width: 100%
         height: 100%
         border: 2px solid
@@ -109,7 +110,7 @@ a
         &:nth-child(3)
             border-color: #1d44b8
             transform-origin: 55% 45%
-    .bg-circle-active
+    &__bg-circle-active
         transform: rotate(0deg)
         animation: 5s linear 0s 0 moveBurgerBg
         animation-direction: reverse
@@ -123,7 +124,6 @@ a
     top: 30px
     left: 16px
     transition: .3s
-    transform: rotate(0deg)
 
 .burger__second-line
     width: 23px
@@ -134,7 +134,7 @@ a
     top: 40px
     left: 29px
 
-.nav-burger-container
+.nav-burger-menu
     overflow: hidden
     position: fixed
     z-index: 3
@@ -149,11 +149,9 @@ a
         min-height: 100vh
         height: 100vh
 
-.box-solution-info
-    display: block
-
 .burger-active-box
     width: 100%
+    min-height: 100vh
     margin: 0 auto
     background-image: url("/img/bg-burger-desktop.png")
     background-repeat: no-repeat
@@ -177,16 +175,21 @@ a
     height: 3px
     top: 32px
     left: 20px
+    transition: .3s
 .burger__second-line-active
     transform: rotate(-45deg)
     width: 30px
     height: 3px
     top: 32px
     left: 20px
+    transition: .6s
 
 .burger-active-menu-list
     width: 100%
-
+    display: flex
+    flex-direction: column
+    justify-content: center
+    min-height: 90%
     ul
         width: 70%
         max-width: 800px
@@ -241,43 +244,49 @@ a
     display: none
 
 @media screen and (max-width: 1200px)
-    .phone-box
-        a
-            font-size: 18px
-        &:hover
-            font-size: 19px
+    .nav-info
+        &__phone-box
+            a
+                font-size: 18px
+                &:hover
+                    font-size: 19px
 
 @media screen and (max-width: 1150px)
-    .phone-box
-        margin-right: 45px
-    .btn-consultation
-        margin-right: 30px
-        width: 274px
+    .nav-info
+        &__phone-box
+            margin-right: 40px
+        &__btn-consultation
+            margin-right: 30px
+            width: 274px
 @media screen and (max-width: 1025px)
-    .phone-box
-        a
-            font-size: 16px
+    .nav-info
+        &__phone-box
+            a
+                font-size: 15px
 
 @media screen and (max-width: 980px)
-    .phone-box
-        margin: 25px 25px 0 0
-    a
-        font-size: 16px
-        &:hover
-            color: #d6d4d4
+    .nav-info
+        &__phone-box
+            margin: 25px 25px 0 0
+            a
+                font-size: 16px
+                &:hover
+                    color: #d6d4d4
+        &__btn-consultation
+            width: 229px
+            height: 38px
+            margin-top: 15px
+            font-size: 12px
+            margin-right: 5px
+            a
+                font-size: 12px
     .language-box
         display: none
-    .bg-circle
-        display: none
 
-    .btn-consultation
-        width: 229px
-        height: 38px
-        margin-top: 15px
-        font-size: 12px
-        margin-right: 5px
     .burger-container
         margin-top: 0
+        &__bg-circle
+            display: none
     .burger-active-menu-list
         ul
             width: 75%
@@ -321,12 +330,14 @@ a
         display: none
     .burger-bottom-design
         display: none
-    .phone-box
-        display: none
+    .nav-info
+        &__phone-box
+            display: none
 
 @media screen and (max-width: 500px)
-    .btn-consultation
-        display: none
+    .nav-info
+        &__btn-consultation
+            display: none
 
     .burger-active-box
         nav img
@@ -346,8 +357,8 @@ a
                     margin: 0
                     padding-left: 5px
                     color: #ffffffde
-                &:active
-                    color: #00e1ff
+                    &:active
+                        color: #00e1ff
     .burger-active-link
         display: block
         text-align: center

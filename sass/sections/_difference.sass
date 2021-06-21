@@ -2,12 +2,13 @@
 .difference-container
     width: 80%
     margin: 0 auto
-    padding-top: 150px
-
+    min-height: 100vh
     h2
+        padding-top: 150px
         margin: 0
-        font-size: 55px
+        font-size: 50px
         max-width: 900px
+        font-weight: normal
         text-transform: uppercase
         color: white
         line-height: 57px
@@ -22,20 +23,20 @@
 .difference-box
     max-width: 540px
     padding-bottom: 50px
-
     img
         mix-blend-mode: lighten
 
-.difference-box__article
-    font-size: 28px
-    color: white
-    font-family: 'Neue Machina'
-    font-weight: bold
+    &__article
+        font-size: 28px
+        color: white
+        font-family: 'Neue Machina'
+        font-weight: bold
 
-.difference-box__main-txt
-    font-size: 17px
-    line-height: 24px
-    color: rgba(255, 255, 255, 0.8)
+    &__main-txt
+        font-size: 17px
+        line-height: 24px
+        color: rgba(255, 255, 255, 0.8)
+        font-family: 'Helvetica Neue Cyr'
 
 @media screen and (max-width: 1250px)
     .difference-container
@@ -46,11 +47,11 @@
         padding: 0
         margin-top: 20px
         justify-content: space-around
-    .difference-box__main-txt
-        max-width: 500px
 
     .difference-box
         max-width: 380px
+        &__main-txt
+            max-width: 500px
 @media screen and (max-width: 1150px)
 
     .difference-container
@@ -61,14 +62,12 @@
     .difference-container
         width: 95%
 
-    .difference-box__article
-        font-size: 24px
-        max-width: 280px
-
-    .difference-box__main-txt
-        font-size: 14px
     .difference-box
-        padding-bottom: 80px
+        &__article
+            font-size: 24px
+            max-width: 280px
+        &__main-txt
+            font-size: 14px
 
 @media screen and (max-width: 860px)
     .difference-images-blocks
@@ -85,19 +84,13 @@
             font-size: 30px
             max-width: 500px
             margin-left: 30px
-@media screen and (max-width: 420px)
+
+@media screen and (max-width: 480px)
     .difference-container
         h2
-            font-size: 20px
-            width: 100%
-            margin: 0
+            font-size: 25px
     .difference-box
         img
-            width: 100%
+            width: 70%
             margin: 0 auto
-    .difference-container
-        width: 90%
-        margin: 0 auto
-
-    .difference-box__article
-        font-size: 20px
+            transform: scale(-1, 1)

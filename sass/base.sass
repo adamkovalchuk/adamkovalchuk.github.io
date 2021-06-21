@@ -6,9 +6,11 @@ html
 a
     text-decoration: none
 
-h1, h2
+h1
     font-family: 'Neue Machina'
-
+h2
+    font-family: 'Neue Machina'
+    font-weight: normal
 section
     position: relative
 .bg-section
@@ -40,11 +42,16 @@ section
         width: 140px
         height: 37px
         padding-top: 20px
-
+@media screen and ( max-width: 720px  )
+    .logo
+        padding-left: 20px
 @media screen and ( max-width: 600px  )
     .return-arrow
         margin: 40px 0 0 40px
 
+@media screen and ( max-width: 520px  )
+    .logo
+        padding-left: 10px
 @media screen and ( max-width: 380px  )
     .return-arrow
         margin: 40px 0 0 20px
