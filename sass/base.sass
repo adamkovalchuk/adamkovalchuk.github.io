@@ -44,6 +44,22 @@ section
     &:hover
         border: 1px solid rgb(255, 249, 249)
 
+.vertical-slider-indicator__container
+    position: fixed
+    z-index: 2
+    left: 10px
+    top: 50%
+    transform: translateY(-50%)
+    width: 10px
+    .vertical-slider-indicator
+        width: 10px
+        height: 10px
+        background: white
+        margin-bottom: 10px
+        transition: height 0.2s ease
+        border-radius: 5px
+        &.active
+            height: 40px
 @media screen and ( max-width: 980px  )
     .logo
         width: 140px
