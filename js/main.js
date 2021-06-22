@@ -30,6 +30,5 @@ for (let burger of burgers) {
     burger.addEventListener('click', openBurger)
 }
 
-
 // ? Властивість classList повертає псевдомасив DOMTokenList, що містить всі класи елемента.
 // ?  toggle  Якщо клас у елемента відсутній - додає, інакше - прибирає. Коли другим параметром передано false - видаляє вказаний клас, а якщо true - додає.
