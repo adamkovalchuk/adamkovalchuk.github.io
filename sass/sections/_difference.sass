@@ -3,7 +3,7 @@
     width: 80%
     margin: 0 auto
     h2
-        padding-top: 150px
+        padding-top: 200px
         margin: 0
         font-size: 50px
         max-width: 900px
@@ -39,7 +39,7 @@
     .difference-container
         width: 90%
         h2
-            margin-left: 50px
+            margin-left: 30px
     .difference-images-blocks
         padding: 0
         margin-top: 20px
@@ -55,39 +55,60 @@
         h2
             font-size: 45px
             max-width: 800px
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 980px)
     .difference-container
         width: 95%
-
     .difference-box
         &__article
             font-size: 24px
             max-width: 280px
         &__main-txt
             font-size: 14px
-
-@media screen and (max-width: 860px)
+@media screen and (max-width: 930px)
+    .difference-container
+        width: 85%
     .difference-images-blocks
         flex-direction: column
         width: 100%
     .difference-box
         margin: 0 auto
+        max-width: 450px
+        padding-bottom: 10px
+        &__article
+            max-width: 100%
     .difference-container
         h2
             font-size: 40px
+@media screen and (max-width: 810px)
+    .difference-container
+        h2
+            font-size: 20px
 @media screen and (max-width: 680px)
     .difference-container
         h2
             font-size: 30px
             max-width: 500px
             margin-left: 30px
-
+@media screen and (max-width: 580px)
+    .difference-box
+        max-width: 350px
+        img
+            width: 90%
 @media screen and (max-width: 480px)
     .difference-container
         h2
-            font-size: 25px
+            font-size: 20px
+            padding-top: 80px
     .difference-box
+        max-width: 90%
+        &__article
+            font-size: 17px
         img
             width: 70%
             margin: 0 auto
             transform: scale(-1, 1)
+@media screen and (max-width: 380px)
+    .difference-box
+        max-width: 80%
+        img
+            width: 90%

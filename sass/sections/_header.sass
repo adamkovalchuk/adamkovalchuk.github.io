@@ -15,7 +15,7 @@ header
   display: flex
   width: 80%
   margin: 0 auto
-  padding-top: 150px
+  padding-top: 250px
 
 .header-title-box
   max-width: 700px
@@ -91,18 +91,28 @@ header
 
 @media screen and (max-width: 1150px)
   .header-title-box
-    margin-left: 50px
+    margin-left: 80px
+    h1
+      font-size: 50px
+    &__subtitle
+      max-width: 450px
+      font-size: 16px
 
   .header-VR-img
     width: 430px
+    margin-left: 30px
 @media screen and (max-width: 1025px)
   .header-title-box
+    margin-right: 30px
     h1
       font-size: 45px
     &__subtitle
-      margin-left: 20px
+      font-size: 15px
+      max-width: 420px
   .header-VR-img
     position: inherit
+    width: 400px
+    margin: 0
   .header-bottom-box
     margin-top: 140px
 
@@ -113,11 +123,11 @@ header
     background-size: cover
     background-position: top
   .header-bottom-box
-    margin-top: 140px
+    padding-top: 10px
     padding-bottom: 56px
   .header-title-container
     flex-direction: column-reverse
-    margin: 100px auto
+    padding-top: 150px
     align-items: center
 
   .header-title-box
@@ -126,25 +136,28 @@ header
   .header-VR-img
     width: 520px
 
-@media screen and (max-width: 710px)
+@media screen and (max-width: 780px)
 
   .header-VR-img
-    width: 70%
+    width: 60%
 
   .header-bottom-box
-    margin-top: 30px
     flex-direction: column
     text-align: start
     width: 60%
   .header-title-box
-    &__VR-graph
-      margin: 0
+    margin: 0 auto
 
+@media screen and (max-width: 730px)
+  .header-title-box
+    h1
+      font-size: 50px
 @media screen and (max-width: 630px)
   .header-VR-img
-    width: 90%
+    width: 70%
   .header-title-box
     margin: 0 auto
+    margin-left: 95px
     max-width: 450px
     width: 90%
     h1
@@ -154,22 +167,37 @@ header
       margin: 10px 0
 
   .header-bottom-box
-    width: 90%
-    margin: 0 auto
+    width: 70%
     font-size: 12px
     &__txt
       font-size: 12px
 
-@media screen and (max-width: 500px)
+@media screen and (max-width: 550px)
   .header-VR-img
     width: 85%
-    margin-left: 10px
+    margin-left: 30px
   .header-title-box
+    text-align: center
+    margin: 0 auto
     width: 90%
     h1
       font-size: 35px
     &__subtitle
       font-size: 13px
+      max-width: 350px
+      margin: 0 auto
+    &__VR-graph
+      margin: 0
 
+  .header-bottom-box
+    margin-top: 50px
   .header-bottom-box__txt
+
     padding: 0
+
+@media screen and (max-width: 430px)
+  .header-title-box
+    width: 70%
+    text-align: start
+    &__subtitle
+      min-width: 260px

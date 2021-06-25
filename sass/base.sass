@@ -47,15 +47,15 @@ section
 .vertical-slider-indicator__container
     position: fixed
     z-index: 2
-    left: 10px
+    left: 30px
     top: 50%
     transform: translateY(-50%)
     width: 10px
     .vertical-slider-indicator
-        width: 10px
-        height: 10px
+        width: 5px
+        height: 5px
         background: white
-        margin-bottom: 10px
+        margin-bottom: 20px
         transition: height 0.2s ease
         border-radius: 5px
         &.active
@@ -75,6 +75,8 @@ section
 @media screen and ( max-width: 520px  )
     .logo
         padding-left: 10px
+    .vertical-slider-indicator__container
+        left: 15px
 @media screen and ( max-width: 380px  )
     .return-arrow
         margin: 40px 0 0 20px

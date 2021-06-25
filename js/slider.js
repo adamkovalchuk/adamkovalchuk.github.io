@@ -1,3 +1,5 @@
+const slideCurrent = document.getElementsByClassName('slide-current')[0]
+
 $(document).ready(function(){
     $('.team-slider').slick({
         prevArrow: '.team-slider__controls-prev',
@@ -5,7 +7,7 @@ $(document).ready(function(){
         slidesToShow: 4,
         touchThreshold: Infinity,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 1000,
         pauseOnHover: true,
         slidesToScroll: 1,
         centerMode: true,
@@ -17,5 +19,9 @@ $(document).ready(function(){
               }
             },
         ]
-    })
+    }).on('afterChange', function(event, slick, currentSlide, nextSlide){
+        slideCurrent.innerHTML = `0${currentSlide}/07`
+    });
   });
+
+

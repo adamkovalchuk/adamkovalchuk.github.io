@@ -1,199 +1,219 @@
 
 .solution-container
-    width: 85%
-    margin: 0 auto
+  width: 85%
+  margin: 0 auto
 .solution-text-block
-    display: flex
-    padding-top: 150px
+  display: flex
+  padding-top: 195px
 
-    h2
-        max-width: 650px
-        font-size: 48px
-        margin-left:
-    p
-        max-width: 540px
-        display: flex
-        align-items: flex-end
-        color: rgba(255, 255, 255, 0.8)
-        font-size: 16px
-        line-height: 21px
-        font-family: 'Helvetica Neue Cyr'
+  h2
+    max-width: 650px
+    font-size: 48px
+    margin-left:
+  p
+    max-width: 540px
+    display: flex
+    align-items: flex-end
+    color: rgba(255, 255, 255, 0.8)
+    font-size: 16px
+    line-height: 21px
+    font-family: 'Helvetica Neue Cyr'
 .images-solutions-box
-    display: flex
-    margin: 40px auto
-    margin-bottom: 0
-    width: 95%
-    justify-content: space-between
-    padding-bottom: 120px
-    a
-        width: 520px
-        height: 380px
-        border: 1px solid rgba(255, 255, 255, 0.2)
-        box-sizing: border-box
-        border-radius: 3px
-        &:hover
-            border: 1px solid rgb(255, 253, 253)
-.arrow-mobile
-    display: none
-
-.solutions-square-box
+  display: flex
+  margin: 40px auto
+  margin-bottom: 0
+  width: 95%
+  justify-content: space-between
+  padding-bottom: 120px
+  a
     width: 520px
     height: 380px
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    box-sizing: border-box
+    border-radius: 3px
+    &:hover
+      border: 1px solid rgb(255, 253, 253)
+.arrow-mobile
+  display: none
 
-    img
-        mix-blend-mode: lighten
-        position: absolute
-    p
-        padding-top: 52%
-        padding-left: 70px
-        font-size: 22px
-        line-height: 130%
-        letter-spacing: 0.03em
-        color: #FFFFFF
-        margin: 0
-        margin-bottom: 10px
-        width: 70%
-        font-family: 'Neue Machina'
-        font-weight: bold
+.solutions-square-box
+  width: 520px
+  height: 380px
 
-    span
-        padding-left: 70px
-        font-size: 14px
-        line-height: 97%
-        letter-spacing: 0.1em
-        text-transform: uppercase
-        color: #FFFFFF
-        font-family: 'Helvetica Neue Cyr'
-        &:hover
-            color: red
+  img
+    mix-blend-mode: lighten
+    position: absolute
+  p
+    padding-top: 52%
+    padding-left: 70px
+    font-size: 22px
+    line-height: 130%
+    letter-spacing: 0.03em
+    color: #FFFFFF
+    margin: 0
+    margin-bottom: 10px
+    width: 70%
+    font-family: 'Neue Machina'
+    font-weight: bold
+
+  span
+    padding-left: 70px
+    font-size: 14px
+    line-height: 97%
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    font-family: 'Helvetica Neue Cyr'
+    &:hover
+      color: red
 .second-solution
-    margin-top: 45px
+  margin-top: 45px
 
 @media screen and (max-width: 1300px)
-    .solution-text-block
-        h2
-            font-size: 33px
+  .solution-text-block
+    flex-direction: column
+    width: 95%
+    margin: 0 auto
+    h2
+      font-size: 45px
 
-    .images-solutions-box
-        a
-            width: 470px
+  .images-solutions-box
+    a
+      width: 470px
 
-    .solutions-square-box
-        width: 470px
-        p
-            position: relative
-            padding: 0
-            top: 67%
-            left: 10%
+  .solutions-square-box
+    width: 470px
+    p
+      position: relative
+      padding: 0
+      top: 67%
+      left: 10%
 
-        span
-            position: relative
-            top: 68%
-            left: 10%
-            padding: 0
+    span
+      position: relative
+      top: 68%
+      left: 10%
+      padding: 0
 
-    .second-solution-img
-        position: relative
-        left: 25%
+  .second-solution-img
+    position: relative
+    left: 25%
 
 @media screen and (max-width: 1200px)
-    .images-solutions-box
-        flex-direction: column
-        a
-            width: 80%
-    .solutions-square-box
-        width: 100%
+  .images-solutions-box
+    flex-direction: column
+    a
+      width: 80%
+  .solutions-square-box
+    width: 100%
 
 @media screen and (max-width: 1080px)
-    .solution-text-block
-        width: 95%
-        margin: 0 auto
-        flex-direction: column
-        h2
-            font-size: 38px
+  .solution-text-block
+    width: 95%
+    margin: 0 auto
+    flex-direction: column
+    h2
+      font-size: 38px
 @media screen and (max-width: 990px)
-    .second-solution-img
-        left: 20%
+  .solution-text-block
+    h2
+      padding-top: 80px
+  .second-solution-img
+    left: 20%
 @media screen and (max-width: 900px)
-    .solution-text-block
-        h2
-            font-size: 30px
-    .second-solution-img
-        left: 15%
+  .solution-text-block
+    padding-top: 80px
+    h2
+      font-size: 30px
+  .second-solution-img
+    left: 15%
 @media screen and (max-width: 820px)
-    .images-solutions-box
-        a
-            width: 100%
-    .solutions-square-box
-        width: 100%
-    .second-solution-img
-        left: 25%
+  .images-solutions-box
+    a
+      width: 100%
+  .solutions-square-box
+    width: 100%
+  .second-solution-img
+    left: 25%
 @media screen and ( max-width: 740px  )
-    .arrow-mobile
-        display: block
-        width: 50px
-        position: absolute
-        left: 83%
-        margin-top: 30px
-        img
-            width: 25px
-    .solutions-square-box
-        span
-            display: none
-        p
-            top: 80%
-    .second-solution-img
-        left: 20%
+  .arrow-mobile
+    display: block
+    width: 50px
+    position: absolute
+    left: 83%
+    margin-top: 30px
+    img
+      width: 25px
+  .solutions-square-box
+    span
+      display: none
+    p
+      top: 80%
+  .second-solution-img
+    left: 20%
 
 @media screen and ( max-width: 687px  )
-    .solutions-square-box
-        img
-            left: 10%
-            width: 80%
-            height: 370px
-            margin: 0 auto
-    .arrow-mobile
-        display: block
-        width: 50px
-        position: absolute
-        left: 80%
-        margin-top: 30px
-        text-align: center
+  .solutions-square-box
+    img
+      left: 10%
+      width: 80%
+      height: 370px
+      margin: 0 auto
+  .arrow-mobile
+    display: block
+    width: 50px
+    position: absolute
+    left: 80%
+    margin-top: 30px
+    text-align: center
 
 @media screen and ( max-width: 580px  )
-    .solutions-square-box
-        img
-            height: 300px
-        p
-            font-size: 18px
-    .images-solutions-box
-        a
-            height: 300px
+  .solutions-square-box
+    img
+      height: 300px
+    p
+      font-size: 18px
+      top: 85%
+  .images-solutions-box
+    a
+      height: 300px
 
-    .solutions-square-box
-        height: 300px
+  .solutions-square-box
+    height: 300px
 
 @media screen and ( max-width: 480px  )
-    .arrow-mobile
-        left: 77%
-    .solution-text-block
-        h2
-            font-size: 22px
-        p
-            font-size: 14px
-    .solutions-square-box
-        p
-            font-size: 16px
-            margin: 0
-            width: 90%
-            left: 5%
+  .arrow-mobile
+    left: 77%
+  .solution-text-block
+    h2
+      font-size: 22px
+    p
+      font-size: 14px
+  .solutions-square-box
+    p
+      font-size: 16px
+      margin: 0
+      width: 90%
+      left: 5%
 @media screen and ( max-width: 400px  )
-    .solutions-square-box
-        p
-            font-size: 15px
-    .arrow-mobile
-        left: 75%
-        width: 30px
-        img
-            width: 20px
-            height: 20px
+  .solution-container
+    width: 75%
+  .images-solutions-box
+    a
+      height: 200px
+
+  .solutions-square-box
+    height: 200px
+    img
+      height: 180px
+      width: 50%
+      left: 20%
+    p
+      font-size: 15px
+      top: 75%
+  .arrow-mobile
+    left: 75%
+    width: 30px
+    img
+      width: 20px
+      height: 20px

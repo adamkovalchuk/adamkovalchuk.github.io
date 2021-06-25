@@ -32,8 +32,8 @@
 .slide-numbers
     color: white
     font-size: 25px
+    user-select: none
 .team-slider__controls
-
     display: flex
     width: 244px
     height: 58px
@@ -44,3 +44,7 @@
     align-items: center
     svg
         cursor: pointer
+        fill: grey
+        transition: .5s
+        &:hover
+            fill: white
