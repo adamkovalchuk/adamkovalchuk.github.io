@@ -1,0 +1,181 @@
+.footer-container
+    padding-top: 150px
+    background-blend-mode: lighten
+.man_footer_bg
+    left: 0
+    position: absolute
+    margin-top: 130px
+    mix-blend-mode: screen
+.footer-text-container
+    display: flex
+    position: relative
+    width: 80%
+    margin: 0 auto
+    p
+        position: absolute
+        color: transparent
+        font-family: 'Neue Machina'
+        opacity: 0.1
+        margin: 0
+        left: -4%
+        font-size: 122px
+        line-height: 120px
+        text-transform: uppercase
+        -webkit-text-stroke-width: 1px
+        -webkit-text-stroke-color: white
+    h2
+        font-family: 'Neue Machina'
+        font-size: 52px
+        line-height: 110%
+        margin: 0
+        margin-right: 120px
+        margin-top: 35px
+    span
+        font-size: 22px
+        margin-top: 35px
+        line-height: 29px
+        color: white
+        max-width: 470px
+        letter-spacing: 0.03em
+        font-weight: bold
+        font-family: 'Neue Machina'
+.footer-inputs-container
+    width: 80%
+    display: flex
+    align-items: flex-end
+    flex-direction: column
+    justify-content: flex-end
+    margin: 0 auto
+    margin-top: 90px
+    form
+        position: relative
+        max-width: 600px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+.footer-input-box
+    input
+        width: 270px
+        background: none
+        font-size: 18px
+        display: block
+        border: none
+        padding: 0 0 10px 5px
+        width: 250px
+        color: white
+        border-bottom: 2px solid #f5f6ff
+        font-family: 'Helvetica Neue Cyr'
+        outline: none
+        margin-top: 35px
+.personal-date-box-footer
+    max-width: 270px
+    display: flex
+    margin-top: 40px
+
+    input
+        width: 30px
+        height: 30px
+        margin-right: 15px
+
+    label
+        color: white
+        font-family: 'Helvetica Neue Cyr'
+        font-size: 14px
+
+.mail-phone-footer
+    width: 60%
+    display: flex
+    margin: 0 auto
+    margin-top: 140px
+    position: relative
+    &__box
+        display: flex
+        justify-content: space-around
+        margin: 0 auto
+        svg
+            padding-right: 15px
+        a
+            color: white
+            font-weight: bold
+            font-size: 18px
+            line-height: 29px
+            font-family: 'Neue Machina'
+            letter-spacing: 0.03em
+            &:hover
+                color: #808080
+.number-center
+    padding-right: 75px
+
+@media screen and (max-width: 1399px)
+    .mail-phone-footer
+        margin-top: 110px
+    .footer-text-container
+        width: 85%
+        h2
+            font-size: 45px
+
+@media screen and (max-width: 1399px)
+    .footer-text-container
+        flex-direction: column
+        width: 80%
+        p
+            display: none
+    .man_footer_bg
+        display: none
+    .footer-inputs-container
+        margin: 35px auto 0
+        align-items: flex-start
+    .mail-phone-footer
+        width: 80%
+        &__box
+            justify-content: space-between
+            margin: 0
+
+@media screen and (max-width: 980px)
+    .footer-text-container
+        h2
+            font-size: 40px
+        span
+            font-size: 20px
+
+@media screen and (max-width: 860px)
+    .footer-text-container
+        width: 70%
+    .footer-inputs-container
+        width: 70%
+    .mail-phone-footer
+        width: 70%
+        flex-direction: column
+        &__box
+            justify-content: flex-start
+
+@media screen and (max-width: 800px)
+    .footer-container
+        padding-top: 80px
+    .mail-phone-footer
+        display: none
+    .footer-inputs-container
+        margin-top: 5px
+        form
+            width: 100%
+    .footer-input-box
+        width: 100%
+        margin-top: 20px
+
+        input
+            width: 100%
+
+@media screen and (max-width: 730px)
+    .footer-text-container
+        h2
+            font-size: 30px
+        span
+            display: none
+@media screen and (max-width: 580px)
+    .footer-container
+        padding-top: 100px
+    .footer-text-container
+        h2
+            font-size: 25px
+            margin: 0
