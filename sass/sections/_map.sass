@@ -1,0 +1,84 @@
+.map-container
+    width: 85%
+    margin: 0 auto
+.map-txt-box
+    display: flex
+    padding-top: 150px
+
+    h2
+        font-size: 48px
+        letter-spacing: 0.02em
+        margin: 0
+        margin-right: 40px
+    p
+        max-width: 550px
+        font-size: 17px
+        line-height: 140%
+        color: rgba(255, 255, 255, 0.8)
+        font-family: 'Helvetica Neue Cyr'
+.map
+    display: flex
+    align-items: center
+    padding-top: 50px
+    width: 80%
+    margin: 0 auto
+    padding-bottom: 30px
+    iframe
+        margin: 0 auto
+        width: 100%
+        height: 450px
+        border-radius: 20px
+        border: 34px solid #000000
+
+@media screen and (max-width: 1200px)
+    .map-txt-box
+        h2
+            font-size: 45px
+        p
+            max-width: 400px
+    .map
+        iframe
+            height: 400px
+@media screen and (max-width: 1000px)
+    .map-txt-box
+        flex-direction: column
+        h2
+            font-size: 40px
+    .map
+        width: 85%
+        iframe
+            border-radius: 2px
+            border: 2px solid #000000
+
+@media screen and (max-width: 830px)
+    .map-container
+        width: 75%
+    .map
+        width: 100%
+
+@media screen and (max-width: 690px)
+    .map-txt-box
+        h2
+            font-size: 37px
+
+    .map
+        iframe
+            height: 350px
+
+@media screen and (max-width: 480px)
+    .map-txt-box
+        padding-top: 100px
+        h2
+            font-size: 32px
+        p
+            font-size: 15px
+    .map
+        iframe
+            height: 300px
+    .map-container
+        width: 70%
+
+@media screen and (max-width: 350px)
+    .map
+        iframe
+            height: 300px

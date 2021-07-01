@@ -11,7 +11,14 @@ $(document).ready(function(){
         pauseOnHover: true,
         slidesToScroll: 1,
         centerMode: true,
+        respondTo: 'window',
         responsive: [
+            {
+              breakpoint: 1399,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
             {
               breakpoint: 1024,
               settings: {
@@ -19,9 +26,7 @@ $(document).ready(function(){
               }
             },
         ]
-    }).on('afterChange', function(event, slick, currentSlide, nextSlide){
-        slideCurrent.innerHTML = `0${currentSlide}/07`
-    });
+    })
   });
 
 
