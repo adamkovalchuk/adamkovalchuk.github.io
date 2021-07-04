@@ -51,6 +51,6 @@ window.onload = function() {
       scrollToSection(sceneContainers[i])
     }
     indicatorsContainer.append(indicator)
-    initScene(controller, sceneContainers[i], i)
+    // initScene(controller, sceneContainers[i], i)
   }  
 }
