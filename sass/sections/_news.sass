@@ -1,0 +1,84 @@
+.news-container
+    padding-top: 150px
+    margin: 0 auto
+    width: 85%
+    h2
+        font-size: 48px
+
+.news-boxes-container
+    display: flex
+    justify-content: space-between
+
+.news-box
+    max-width: 320px
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6)
+    margin-right: 50px
+    min-height: 220px
+    box-shadow: border-box
+    img
+        width: 100%
+
+    &__title
+        font-family: 'Neue Machina'
+        font-weight: bold
+        font-size: 18px
+        line-height: 130%
+        letter-spacing: 0.03em
+        color: #FFFFFF
+
+    &__text-about
+        font-family: 'Helvetica Neue Cyr'
+        font-size: 14px
+        line-height: 130%
+        color: rgba(255, 255, 255, 0.6)
+
+    &:hover
+        border-bottom: 2px solid rgb(255, 255, 255)
+        background: rgba(0, 0, 0, 0.034)
+.news-bottom-info
+    display: flex
+    width: 100%
+    justify-content: space-between
+    font-family: 'Helvetica Neue Cyr'
+    line-height: 130%
+    text-transform: uppercase
+    margin-top: 50px
+    color: rgba(255, 255, 255, 0.6)
+
+.news-slider-numbers-and-arrows
+    width: 85%
+    margin: 45px auto 0
+    padding-bottom: 60px
+    display: flex
+    justify-content: space-between
+
+.news-slide-numbers
+    color: white
+    font-size: 25px
+    user-select: none
+
+.news-slider__controls
+    display: flex
+    width: 244px
+    height: 58px
+    justify-content: space-around
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    box-sizing: border-box
+    border-radius: 67px
+    align-items: center
+    svg
+        cursor: pointer
+        fill: grey
+        transition: .5s
+        &:hover
+            fill: white
+
+@media screen and (max-width: 1399px)
+    .news-box
+        &__title
+            font-size: 16px
+
+@media screen and (max-width: 1000px)
+    .news-container
+        h2
+            font-size: 40px
