@@ -28,6 +28,12 @@ $(document).ready(function(){
             swipeToSlide: true,        
           }
         },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
       ]
     })
   });

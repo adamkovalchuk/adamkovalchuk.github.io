@@ -5,10 +5,6 @@
     h2
         font-size: 48px
 
-.news-boxes-container
-    display: flex
-    justify-content: space-between
-
 .news-box
     max-width: 320px
     border-bottom: 2px solid rgba(255, 255, 255, 0.6)
@@ -78,7 +74,23 @@
         &__title
             font-size: 16px
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 990px)
     .news-container
         h2
             font-size: 40px
+@media screen and (max-width: 820px)
+    .news-container
+        h2
+            font-size: 32px
+@media screen and (max-width: 700px)
+    .news-container
+        width: 80%
+    .news-boxes-container
+        width: 80%
+        margin: 0 auto
+
+@media screen and (max-width: 700px)
+    .news-container
+        padding-top: 120px
+        h2
+            font-size: 25px
