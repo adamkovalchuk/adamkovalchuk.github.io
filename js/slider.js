@@ -1,6 +1,10 @@
 const slideCurrent = document.getElementsByClassName('slide-current')[0]
 
 $(document).ready(function(){
+  $('.team-slider').on('init', function(event, slick) {
+    $('#team-slide-total').html(slick.slideCount.toString().padStart(2, '0'))
+  })
+
   $('.team-slider').slick({
     prevArrow: '.team-slider__controls-prev',
     nextArrow: '.team-slider__controls-next',
@@ -40,6 +44,7 @@ $(document).ready(function(){
       },
     ]
   })
+  $('.team-slider').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+    $('#team-slide-current').html((nextSlide + 1).toString().padStart(2, '0'))
+  })
 });
-
-

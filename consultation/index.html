@@ -16,7 +16,11 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="/css/index.css">
-
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+    ></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 <body>
@@ -96,13 +100,13 @@
         <form action="">
           <div class="consultation-inputs-container">
             <div class="input-box">
-              <input type="text" placeholder="Имя" >
+              <input type="text" placeholder="Имя" class="input invalid name-input">
             </div>
             <div class="input-box">
-              <input type="text" placeholder="Телефон.">
+              <input type="text" placeholder="Телефон." class="input invalid phone-input">
             </div>
             <div class="input-box">
-              <input type="text" placeholder="E-mail" >
+              <input type="text" placeholder="E-mail" class="input invalid email-input" >
             </div>
             <div class="input-box-big">
               <input class="big-input" type="text" placeholder="Описание задачи">
@@ -110,10 +114,10 @@
           </div>
           <div class="btn-date-checkbox">
             <div class="personal-date-box">
-              <input type="checkbox"  name="date">
+              <input type="checkbox" id="date">
               <label for="date">Я согласен с политикой конфиденциальности</label>
             </div>
-            <button class="iputs-button">Отправить заявку</button>
+            <button disabled id="submit-form" class="iputs-button">Отправить заявку</button>
           </div>
         </form>
         <div class="mail-phone-container">
@@ -142,6 +146,6 @@
     <p class="consultation-bottom-design">© 2021 vr-design</p>
   </section>
   <script src="/js/main.js"></script>
-
+  <script src="/js/form-validation.js"></script>
 </body>
 </html>

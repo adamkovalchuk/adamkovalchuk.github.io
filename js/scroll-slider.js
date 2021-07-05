@@ -23,9 +23,7 @@ function initScene(controller, section, sectionIndex) {
       duration: 0,
       offset: 0,
       triggerHook: 1 - triggerOffset,
-      loglevel: 3
   }).addTo(controller)
-    .addIndicators()
     .on('enter', onTrigger)
 
   new ScrollMagic.Scene({
@@ -33,14 +31,12 @@ function initScene(controller, section, sectionIndex) {
     duration: 0,
     offset: sectionHeight,
     triggerHook: triggerOffset,
-    loglevel: 3
   }).addTo(controller)
-    .addIndicators()
     .on('leave', onTrigger)
 }
 
 window.onload = function() {
-  const controller = new ScrollMagic.Controller({loglevel: 3})
+  const controller = new ScrollMagic.Controller()
   const sceneContainers = document.querySelectorAll('header, section, footer')
   const indicatorsContainer = document.querySelector('.vertical-slider-indicator__container')
 
@@ -51,6 +47,8 @@ window.onload = function() {
       scrollToSection(sceneContainers[i])
     }
     indicatorsContainer.append(indicator)
-    // initScene(controller, sceneContainers[i], i)
+    
+    if(window.innerWidth > 768)
+      initScene(controller, sceneContainers[i], i)
   }  
 }

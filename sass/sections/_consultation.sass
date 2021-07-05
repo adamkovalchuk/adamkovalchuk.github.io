@@ -81,6 +81,8 @@ body
         border-bottom: 2px solid #818499
         font-family: 'Helvetica Neue Cyr'
         outline: none
+        &.invalid
+            border-bottom-color: red
 
 .input-box-big
     width: 100%
@@ -125,10 +127,12 @@ body
     transition: .2s
     font-family: 'Helvetica Neue Cyr'
 
-    &:hover
+    &:hover:not(:disabled)
         background: linear-gradient(112.73deg, #5E1EC6 1.67%, #1E4FC6 100%)
-    &:active
+    &:active:not(:disabled)
         border: black 3px solid
+    &:disabled
+        background: grey
 .consultation-bottom-design
     padding: 0 95px
     margin-top: 70px

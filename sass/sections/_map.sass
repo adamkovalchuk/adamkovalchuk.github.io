@@ -1,6 +1,7 @@
 .map-container
     width: 85%
     margin: 0 auto
+    padding-bottom: 50px
 .map-txt-box
     display: flex
     padding-top: 150px
@@ -17,73 +18,81 @@
         color: rgba(255, 255, 255, 0.8)
         font-family: 'Helvetica Neue Cyr'
 .map
-    display: flex
-    align-items: center
-    max-width: 85%
-    margin: 0 auto
-    margin-top: 30px
-    padding-bottom: 30px
-    height: 580px
-    background: url("/img/macbook.png")
-    background-size: cover
-    z-index: 25
     position: relative
-    iframe
-        top: 43px
-        left: 12%
-        position: absolute
-        z-index: 22
-        margin: 0 auto
-        width: 75%
-        height: 475px
-
-@media screen and (max-width: 1200px)
-    .map-txt-box
-        h2
-            font-size: 45px
-        p
-            max-width: 400px
-    .map
-        iframe
-            height: 400px
-@media screen and (max-width: 1000px)
-    .map-txt-box
-        flex-direction: column
-        h2
-            font-size: 40px
-    .map
-        width: 85%
-        iframe
-            border-radius: 2px
-            border: 2px solid #000000
-
-@media screen and (max-width: 830px)
-    .map-txt-box
-        h2
-            font-size: 32px
-    .map
+    width: 100%
+    &:before
+        content: ''
+        display: block
+        padding-top: 59.7%
+    &:after
+        content: ''
+        display: block
         width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        background: url("/img/macbook.png")
+        background-size: 100%
+        z-index: 2
+        pointer-events: none
+    iframe
+        top: 6.9%
+        left: 13.3%
+        position: absolute
+        z-index: 1
+        margin: 0 auto
+        width: 73.7%
+        height: 77.4%
+        border: none
 
-@media screen and (max-width: 690px)
-    .map-container
-        width: 80%
-    .map
-        iframe
-            height: 350px
+// @media screen and (max-width: 1200px)
+//     .map-txt-box
+//         h2
+//             font-size: 45px
+//         p
+//             max-width: 400px
+//     .map
+//         iframe
+//             height: 400px
+// @media screen and (max-width: 1000px)
+//     .map-txt-box
+//         flex-direction: column
+//         h2
+//             font-size: 40px
+//     .map
+//         width: 85%
+//         iframe
+//             border-radius: 2px
+//             border: 2px solid #000000
 
-@media screen and (max-width: 580px)
-    .map-txt-box
-        padding-top: 120px
-        h2
-            font-size: 25px
-        p
-            font-size: 15px
-@media screen and (max-width: 480px)
-    .map
-        iframe
-            height: 450px
+// @media screen and (max-width: 830px)
+//     .map-txt-box
+//         h2
+//             font-size: 32px
+//     .map
+//         width: 100%
 
-@media screen and (max-width: 350px)
-    .map
-        iframe
-            height: 300px
+// @media screen and (max-width: 690px)
+//     .map-container
+//         width: 80%
+//     .map
+//         iframe
+//             height: 350px
+
+// @media screen and (max-width: 580px)
+//     .map-txt-box
+//         padding-top: 120px
+//         h2
+//             font-size: 25px
+//         p
+//             font-size: 15px
+// @media screen and (max-width: 480px)
+//     .map
+//         iframe
+//             height: 450px
+
+// @media screen and (max-width: 350px)
+//     .map
+//         iframe
+//             height: 300px

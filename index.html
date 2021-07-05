@@ -22,7 +22,6 @@
     ></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
 
 <body>
@@ -262,7 +261,7 @@
       </div>
       <div class="slider-numbers-and-arrows">
         <div class="slide-numbers">
-            <p class="slide-current">00/07</p>
+            <p class="slide-current"><span id="team-slide-current">01</span>/<span id="team-slide-total">00</span></p>
         </div>
         <div class="team-slider__controls">
           <div class="team-slider__controls-prev"><svg width="62" height="9" viewBox="0 0 62 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -391,7 +390,7 @@
             <input type="checkbox"  name="date">
             <label for="date">Я согласен с политикой конфиденциальности</label>
           </div>
-          <button class="iputs-button footer-btn">Отправить заявку</button>
+          <button  class="iputs-button footer-btn">Отправить заявку</button>
         </form>
       </div>
       <div class="mail-phone-footer">
