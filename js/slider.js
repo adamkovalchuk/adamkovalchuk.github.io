@@ -7,7 +7,7 @@ $(document).ready(function(){
     slidesToShow: 4,
     touchThreshold: Infinity,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     slidesToScroll: 1,
     centerMode: false,
@@ -21,9 +21,21 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 950,
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 1,
         }
       },
     ]

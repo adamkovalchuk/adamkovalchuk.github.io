@@ -19,16 +19,23 @@
 .map
     display: flex
     align-items: center
-    padding-top: 50px
-    width: 80%
+    max-width: 85%
     margin: 0 auto
+    margin-top: 30px
     padding-bottom: 30px
+    height: 580px
+    background: url("/img/macbook.png")
+    background-size: cover
+    z-index: 25
+    position: relative
     iframe
+        top: 43px
+        left: 12%
+        position: absolute
+        z-index: 22
         margin: 0 auto
-        width: 100%
-        height: 450px
-        border-radius: 20px
-        border: 34px solid #000000
+        width: 75%
+        height: 475px
 
 @media screen and (max-width: 1200px)
     .map-txt-box
