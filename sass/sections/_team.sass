@@ -47,9 +47,12 @@
     align-items: center
     user-select: none
     svg
+        user-select: none
         cursor: pointer
         fill: grey
         transition: .5s
+        width: 70px
+        height: 58px
         &:hover
             fill: white
 
@@ -105,12 +108,14 @@
 
         svg
             padding: 10px
-            background: linear-gradient(112.73deg, #332921 1.67%, #42392a 100%)
-            border-radius: 30px
-            user-select: none
+            border-radius: 5px
+            width: 70px
+            height: 10px
+            border: #332921 2px solid
+
             &:hover
-                fill: black
-                background: linear-gradient(112.73deg, #1E4FC6 100%, #5E1EC6 1.67%)
+                fill: #cc5c01
+                border: #cc5c01 2px solid
 
 @media screen and (max-width: 450px)
     .team-slide-wrapper

@@ -43,9 +43,17 @@
   img
     mix-blend-mode: lighten
     position: absolute
+  &:hover span
+    color: rgba(251, 254, 255, 0.705)
+  &:hover p
+    color: rgba(255, 255, 255, 0.781)
+  &:hover svg
+    fill: rgb(251, 254, 255)
+.solution-difference-box-txt
+  position: relative
+  bottom: -75%
   p
-    padding-top: 52%
-    padding-left: 70px
+    padding-left: 50px
     font-size: 22px
     line-height: 130%
     letter-spacing: 0.03em
@@ -55,16 +63,18 @@
     width: 70%
     font-family: 'Neue Machina'
     font-weight: bold
-  &:hover span
-    color: red
+
   span
-    padding-left: 70px
+    padding-left: 50px
     font-size: 14px
     line-height: 97%
     letter-spacing: 0.1em
     text-transform: uppercase
     color: #FFFFFF
     font-family: 'Helvetica Neue Cyr'
+    svg
+      fill: rgba(251, 254, 255, 0.733)
+      padding-left: 10px
 
 .second-solution
   margin-top: 45px

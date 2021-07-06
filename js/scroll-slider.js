@@ -48,7 +48,7 @@ window.onload = function() {
     }
     indicatorsContainer.append(indicator)
     
-    if(window.innerWidth > 768)
-      initScene(controller, sceneContainers[i], i)
+    // if(window.innerWidth > 768)
+    //   initScene(controller, sceneContainers[i], i)
   }  
 }

@@ -19,7 +19,9 @@
         font-family: 'Helvetica Neue Cyr'
 .map
     position: relative
-    width: 100%
+    width: 80%
+    margin: 0 auto
+    margin-top: 20px
     &:before
         content: ''
         display: block
@@ -46,53 +48,74 @@
         height: 77.4%
         border: none
 
-// @media screen and (max-width: 1200px)
-//     .map-txt-box
-//         h2
-//             font-size: 45px
-//         p
-//             max-width: 400px
-//     .map
-//         iframe
-//             height: 400px
-// @media screen and (max-width: 1000px)
-//     .map-txt-box
-//         flex-direction: column
-//         h2
-//             font-size: 40px
-//     .map
-//         width: 85%
-//         iframe
-//             border-radius: 2px
-//             border: 2px solid #000000
+@media screen and (max-width: 1200px)
+    .map-txt-box
+        h2
+            font-size: 45px
+        p
+            max-width: 450px
+    .map
+        width: 90%
+@media screen and (max-width: 1040px)
+    .map-txt-box
+        flex-direction: column
+        h2
+            font-size: 40px
 
-// @media screen and (max-width: 830px)
-//     .map-txt-box
-//         h2
-//             font-size: 32px
-//     .map
-//         width: 100%
+    .map
+        width: 95%
 
-// @media screen and (max-width: 690px)
-//     .map-container
-//         width: 80%
-//     .map
-//         iframe
-//             height: 350px
+@media screen and (max-width: 830px)
+    .map-txt-box
+        h2
+            font-size: 32px
 
-// @media screen and (max-width: 580px)
-//     .map-txt-box
-//         padding-top: 120px
-//         h2
-//             font-size: 25px
-//         p
-//             font-size: 15px
-// @media screen and (max-width: 480px)
-//     .map
-//         iframe
-//             height: 450px
+@media screen and (max-width: 745px)
+    .map-container
+        width: 80%
+    .map
+        position: relative
+        width: 100%
+        margin: 20px auto 0
+        &:before
+            padding-top: 61.7%
 
-// @media screen and (max-width: 350px)
-//     .map
-//         iframe
-//             height: 300px
+        &:after
+            left: 10%
+            top: 0
+            background: url("/img/ipad.png")
+            background-size: 80%
+            background-repeat: no-repeat
+
+        iframe
+            top: 9.5%
+            left: 16.3%
+            width: 67.7%
+            height: 85.4%
+
+@media screen and (max-width: 580px)
+    .map-txt-box
+        padding-top: 120px
+        h2
+            font-size: 25px
+        p
+            font-size: 15px
+    .map
+        margin-top: 50px
+        &:before
+            padding-top: 100%
+        &:after
+            background: none
+            display: none
+        iframe
+            border: 2px solid black
+
+            top: 6.9%
+            left: 7%
+            width: 85%
+    .map-container
+        padding-bottom: 10px
+@media screen and (max-width: 480px)
+    .map
+        iframe
+            height: 450px

@@ -69,6 +69,8 @@
         transition: .5s
         &:hover
             fill: white
+.news-slide-current
+    margin: 10px
 
 @media screen and (max-width: 1399px)
     .news-box
@@ -76,22 +78,62 @@
             font-size: 16px
 
 @media screen and (max-width: 990px)
+    .news-boxes-container
+        margin-left: 20px
     .news-container
         h2
             font-size: 40px
-@media screen and (max-width: 820px)
+@media screen and (max-width: 900px)
     .news-container
         h2
             font-size: 32px
+
+    .news-boxes-container
+        width: 80%
+        margin: 0 auto
+    .news-box
+        width: 100%
+        margin: 50px
+        max-width: 100%
 @media screen and (max-width: 700px)
     .news-container
         width: 80%
     .news-boxes-container
-        width: 80%
+        width: 100%
         margin: 0 auto
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 600px)
     .news-container
         padding-top: 120px
         h2
             font-size: 25px
+    .news-slider__controls
+        width: 250px
+        border: none
+        svg
+            padding: 10px
+            border-radius: 5px
+            width: 70px
+            height: 10px
+            border: #332921 2px solid
+            &:hover
+                fill: #cc5c01
+                border: #cc5c01 2px solid
+    .news-slider-numbers-and-arrows
+        width: 80%
+    .news-slide-current
+        font-size: 25px
+    .news-container
+        width: 100%
+        h2
+            width: 75%
+            margin: 0 auto
+
+@media screen and (max-width: 420px)
+    .news-slider-numbers-and-arrows
+        flex-direction: column
+        width: 60%
+
+    .news-slider__controls
+        width: 200px
+        justify-content: space-between
