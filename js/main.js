@@ -9,7 +9,7 @@ const burgerContainer = document.getElementsByClassName('nav-burger-menu')
 // ! створив змінні і витягнув всі потрібні мені стилі
 
 
-const openBurger = () => {  //! створив функцію, яка відкриває за активний бургер
+const openBurger = () => {  //! створив функцію, яка відповідає за активний бургер
     for (let circle of circles) {  // ! запустив цикл for of
         circle.classList.toggle('burger-container__bg-circle-active')
     }

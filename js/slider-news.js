@@ -8,7 +8,7 @@ $(document).ready(function(){
     slidesToShow: 3,
     touchThreshold: Infinity,
     autoplay: true,
-    autoplaySpeed: 222000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     slidesToScroll: 1,
     centerMode: true,

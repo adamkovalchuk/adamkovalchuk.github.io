@@ -16,7 +16,7 @@
     display: flex
     position: fixed
     top: 0
-    z-index: 2
+    z-index: 33
     &--consultation
         .btn-consultation
             a
@@ -161,6 +161,7 @@
     background-size: cover
     background-position: center
     mix-blend-mode: hard-light
+
 .nav-container
     width: 100%
     margin: 0 auto
@@ -230,6 +231,7 @@
 
 .burger-active-close-txt
     position: absolute
+
     left: -6%
     top: 150%
     color: white
@@ -324,12 +326,15 @@
 @media screen and (max-width: 710px)
     .burger-active-menu-list
         ul
-            flex-direction: column
+            justify-content: space-around
             align-items: center
-            margin-top: 30px
             margin-bottom: 0
+            margin: 100px auto
+            width: 95%
             li
-                margin: 0
+                font-size: 12px
+                a
+                    font-size: 18px
     .burger-active-close-txt
         display: none
     .burger-bottom-design
@@ -351,15 +356,11 @@
         width: 80px
     .burger-active-menu-list
         ul
-            width: 75%
             li
-                font-size: 12px
                 color: #ffffffde
-                margin: 5px
+                margin: 0
                 a
-                    font-size: 20px
                     margin: 0
-                    padding-left: 5px
                     color: #ffffffde
                     &:active
                         color: #00e1ff

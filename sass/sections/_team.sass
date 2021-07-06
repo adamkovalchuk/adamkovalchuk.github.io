@@ -114,17 +114,23 @@
             border: #332921 2px solid
 
             &:hover
-                fill: #cc5c01
+                fill: black
                 border: #cc5c01 2px solid
+                background: #fff
 
 @media screen and (max-width: 450px)
     .team-slide-wrapper
         &:nth-child(2n)
             padding-top: 0
         img
-            height: 250px
+            height: auto
+            margin: 0 auto
+
         span
             font-size: 15px
+            position: relative
+            left: 10%
+            margin-top: 5px
     .slider-numbers-and-arrows
         flex-direction: column
         padding-left: 15px
@@ -144,7 +150,3 @@
     .team-slide-wrapper
         img
             height: auto
-            margin: 0 auto
-        span
-            position: relative
-            left: 20%
