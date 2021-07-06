@@ -71,20 +71,25 @@
         border-radius: 67px
         background-color: transparent
         font-size: 14px
-        text-transform: uppercase
-        letter-spacing: 0.1em
         cursor: pointer
         transition: 0.5s
-        font-family: 'Helvetica Neue Cyr'
+        text-decoration: none
 
-        a
-            text-decoration: none
+        button
+            background: transparent
+            border: none
             color: white
             font-size: 14px
+            cursor: pointer
+            text-transform: uppercase
 
-.btn-consultation:hover
-    background-color: rgba(255, 255, 255, 0.479)
-    color: black
+            letter-spacing: 0.1em
+
+            font-family: 'Helvetica Neue Cyr'
+
+        &:hover
+            background-color: rgba(255, 255, 255, 0.37)
+            color: black
 
 .burger-container
     width: 65px
@@ -113,11 +118,6 @@
         &:nth-child(3)
             border-color: #1d44b8
             transform-origin: 55% 45%
-    &__bg-circle-active
-        transform: rotate(0deg)
-        animation: 5s linear 0s 0 moveBurgerBg
-        animation-direction: reverse
-        animation-fill-mode: forwards
 
 .burger__first-line
     width: 36px
@@ -281,10 +281,10 @@
             width: 229px
             height: 38px
             margin-top: 15px
-            font-size: 12px
             margin-right: 5px
-            a
+            button
                 font-size: 12px
+
     .language-box
         display: none
 
